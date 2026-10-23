@@ -1,0 +1,61 @@
+{
+  "existing": {
+    "calculator": {
+      "CALCULATOR00": {
+        "arrFeePct": 70,
+        "loan": 71,
+        "margin": 72,
+        "otherFees": 73,
+        "rent": 74,
+        "term": 75,
+        "value": 76,
+        "id": "CALCULATOR00"
+      },
+      "CALCULATOR01": {
+        "arrFeePct": 140,
+        "loan": 141,
+        "margin": 142,
+        "otherFees": 143,
+        "rent": 144,
+        "term": 145,
+        "value": 146,
+        "id": "CALCULATOR01"
+      },
+      "CALCULATOR02": {
+        "arrFeePct": 210,
+        "loan": 211,
+        "margin": 212,
+        "otherFees": 213,
+        "rent": 214,
+        "term": 215,
+        "value": 216,
+        "id": "CALCULATOR02"
+      }
+    }
+  },
+  "new": {
+    "calculator": {
+      "calculator_ref01": {
+        "arrFeePct": 280,
+        "loan": 281,
+        "margin": 282,
+        "otherFees": 283,
+        "rent": 284,
+        "term": 285,
+        "value": 286
+      }
+    }
+  },
+  "requests": {
+    "POST /mcp/tools/calculate": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "POST /mcp/tools/calculator_describe": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

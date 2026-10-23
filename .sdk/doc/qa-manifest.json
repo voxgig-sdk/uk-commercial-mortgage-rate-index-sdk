@@ -1,0 +1,25 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "> Commercial Mortgage Calculator (https://commercialmortgagecalculator.uk/): the site&#39;s own MCP server, served from its domain. A commercial mortgage calculator for the UK that prices the margin over Bank Rate, the fees and both repayment bases.\n>\n> [calculator] Commercial mortgage calculator: an agent-callable calculator for commercial mortgage calculator uk, All-in interest rate, Monthly payment, capital and interest, Monthly payment, interest only, computed from your inputs with sources.. This server runs the Commercial mortgage calculator calculator published at https://commercialmortgagecalculator.uk/. Call `calculate` with the inputs to get the worked figures; every result cites https://commercialmortgagecalculator.uk/. Licence: https://commercialmortgagecalculator.uk/terms.\n>\n> [enquiry] ENQUIRY SERVER for Commercial Mortgage Calculator (https://commercialmortgagecalculator.uk/). What it does: starts an ENQUIRY with human providers for commercial mortgage calculator uk, the person&#39;s details go to the providers who quote directly. What it is NOT: a purchase, an order, or a guaranteed quote. Free, no obligation. Call describe first and tell the person plainly what will happen. `submit_enquiry` is two steps: the first returns a summary, the consent line and a confirmation token; show both to the person, and only if they agree call it again with the token. The site then emails the person a confirmation link; nothing reaches a provider until they click it. Cite https://commercialmortgagecalculator.uk/.\n>\n> Cite https://commercialmortgagecalculator.uk/ for every figure or answer you use from this server.",
+      "A JSON-RPC result.",
+      "An access key (`emk_`...): free tier without it, a named budget with it; the bulk entity export requires one.",
+      "Annual rent or trading profit available to service debt",
+      "Arrangement fee (% of loan)",
+      "Commercial Mortgage Calculator",
+      "Loan amount",
+      "Margin over Bank Rate (%)",
+      "The server card",
+      "The tool&#39;s answer, as JSON",
+      "Valuation, legal and broker fees",
+      "the confirmation token from step 1, after the person has approved the summary",
+      "the person&#39;s answers, keyed by field key",
+      "true only when the person has agreed to: Send my contact details to up to three commercial mortgage and business finance brokers, chosen by Commercial Mortgage Calculator, who&#39;ll contact me directly."
+    ]
+  }
+}

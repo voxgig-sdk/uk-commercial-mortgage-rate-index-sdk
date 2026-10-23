@@ -1,0 +1,39 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      contact: {
+        name: "Commercial Mortgage Calculator"
+        url: "https://commercialmortgagecalculator.uk/"
+      }
+      description: `Commercial Mortgage Calculator (https://commercialmortgagecalculator.uk/): the site's own MCP server, served from its domain. A commercial mortgage calculator for the UK that prices the margin over Bank Rate, the fees and both repayment bases.
+
+[calculator] Commercial mortgage calculator: an agent-callable calculator for commercial mortgage calculator uk — All-in interest rate, Monthly payment, capital and interest, Monthly payment, interest only, computed from your inputs with sources.. This server runs the Commercial mortgage calculator calculator published at https://commercialmortgagecalculator.uk/. Call \`calculate\` with the inputs to get the worked figures; every result cites https://commercialmortgagecalculator.uk/. Licence: https://commercialmortgagecalculator.uk/terms.
+
+[enquiry] ENQUIRY SERVER for Commercial Mortgage Calculator (https://commercialmortgagecalculator.uk/). What it does: starts an ENQUIRY with human providers for commercial mortgage calculator uk — the person's details go to the providers who quote directly. What it is NOT: a purchase, an order, or a guaranteed quote. Free, no obligation. Call describe first and tell the person plainly what will happen. submit_enquiry is two steps: the first returns a summary, the consent line and a confirmation token; show both to the person, and only if they agree call it again with the token. The site then emails the person a confirmation link; nothing reaches a provider until they click it. Cite https://commercialmortgagecalculator.uk/.
+
+Cite https://commercialmortgagecalculator.uk/ for every figure or answer you use from this server.`
+      security: {
+        in: "header"
+        name: "Authorization"
+        prefix: "Bearer"
+        scheme: "accessKey"
+        type: "http"
+      }
+      servers: [
+        {
+          description: "Commercial Mortgage Calculator"
+          url: "https://commercialmortgagecalculator.uk"
+        }
+      ]
+      summary: "A commercial mortgage calculator for the UK that prices the margin over Bank Rate, the fees and both repayment bases."
+      termsOfService: "https://commercialmortgagecalculator.uk/terms"
+      title: "Commercial Mortgage Calculator API"
+      version: "1.0.0"
+      website: "https://commercialmortgagecalculator.uk/mcp"
+    }
+  }
+}
+

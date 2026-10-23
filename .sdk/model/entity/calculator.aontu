@@ -1,0 +1,144 @@
+# Entity: calculator
+
+main: kit: entity: calculator: {
+
+  alias: field: {}
+
+  fields: {
+    arrFeePct: {
+      h: "Arr Fee Pct"
+      n: "arrFeePct"
+      r: false
+      sh: "Arrangement fee (% of loan)"
+      t: "`$NUMBER`"
+    }
+    loan: {
+      h: "Loan"
+      n: "loan"
+      r: false
+      sh: "Loan amount"
+      t: "`$NUMBER`"
+    }
+    margin: {
+      h: "Margin"
+      n: "margin"
+      r: false
+      sh: "Margin over Bank Rate (%)"
+      t: "`$NUMBER`"
+    }
+    otherFees: {
+      h: "Other Fees"
+      n: "otherFees"
+      r: false
+      sh: "Valuation, legal and broker fees"
+      t: "`$NUMBER`"
+    }
+    rent: {
+      h: "Rent"
+      n: "rent"
+      r: false
+      sh: "Annual rent or trading profit available to service debt"
+      t: "`$NUMBER`"
+    }
+    term: {
+      h: "Term"
+      n: "term"
+      r: false
+      sh: "Term in years"
+      t: "`$NUMBER`"
+    }
+    value: {
+      h: "Value"
+      n: "value"
+      r: false
+      sh: "Property value"
+      t: "`$NUMBER`"
+    }
+  }
+
+  name: "calculator"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          bf: [
+            "arrFeePct"
+            "loan"
+            "margin"
+            "otherFees"
+            "rent"
+            "term"
+            "value"
+          ]
+          co: {
+            id: "POST /mcp/tools/calculate"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/mcp/tools/calculate"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "mcp"
+            }
+            {
+              lit: "tools"
+            }
+            {
+              lit: "calculate"
+            }
+          ]
+          t: {
+            req: {
+              arrFeePct: "`reqdata.arr_fee_pct`"
+              loan: "`reqdata.loan`"
+              margin: "`reqdata.margin`"
+              otherFees: "`reqdata.other_fee`"
+              rent: "`reqdata.rent`"
+              term: "`reqdata.term`"
+              value: "`reqdata.value`"
+            }
+            res: "`body`"
+          }
+        }
+        {
+          bf: false
+          co: {
+            id: "POST /mcp/tools/calculator_describe"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/mcp/tools/calculator_describe"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "mcp"
+            }
+            {
+              lit: "tools"
+            }
+            {
+              lit: "calculator_describe"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}
